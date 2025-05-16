@@ -10,7 +10,7 @@ st.title("🤖 Chat with Groq LLaMA 3")
 user_input = st.text_input("You:", placeholder="Ask me anything...")
 
 # API setup
-api_key = os.getenv("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") or st.secrets.get("GROQ_API_KEY")
+api_key = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY")
 headers = {
     "Authorization": f"Bearer {api_key}",
     "Content-Type": "application/json"
